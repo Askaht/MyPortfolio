@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sonu Kumar</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <h2 class="logo">Portfolio</h2>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Hi, I'm <span>Sonu Kumar</span></h1>
+          <h3>Fresher Full Stack Java Developer</h3>
+          <p>I build modern, responsive & scalable web applications</p>
+
+          <div class="hero-btns">
+            <a href="resume.pdf" download class="btn">Download Resume</a>
+            <button class="btn outline" onclick="scrollToContact()">
+              Contect Me
+            </button>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="profile-card">
+            <div class="profile-border">
+              <img src="image/profile.jpeg" alt="Sonu Kumar" />
+            </div>
+            <h3 class="profile-name">Sonu Kumar</h3>
+            <p class="typing-text"><span id="typing"></span></p>
+            <div class="social-icons">
+              <a href="https://github.com/Askaht" title="GitHub">🐙</a>
+              <a
+                href="www.linkedin.com/in/sonu-kumar-33b02b302"
+                title="LinkedIn"
+                >💼</a
+              >
+              <a href="kumarakshat76460@gmail.com" title="Email">✉️</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="section about-section">
+      <h2>About Me</h2>
+      <div class="about-card">
+        <p>
+          I am a passionate and detail-oriented Fresher Full Stack Java
+          Developer with expertise in Java, Spring Boot, HTML, CSS, JavaScript,
+          and SQL. I enjoy turning ideas into responsive, user-friendly web
+          applications.
+        </p>
+        <p>
+          I am constantly learning new technologies and following best coding
+          practices to build scalable and professional applications.
+        </p>
+        <p><strong>Core Strengths:</strong></p>
+        <ul>
+          <li>Full Stack Web Development (Frontend + Backend)</li>
+          <li>Database Design and CRUD Operations</li>
+          <li>Problem Solving & Logical Thinking</li>
+          <li>Version Control using Git & GitHub</li>
+          <li>Responsive & Mobile-First Web Design</li>
+        </ul>
+        <p>
+          <strong>Hobbies & Interests:</strong> Exploring new technologies,
+          coding challenges, reading tech blogs, and working on small personal
+          projects.
+        </p>
+        <div class="skill-badges">
+          <span class="badge">Java</span>
+          <span class="badge">Spring Boot</span>
+          <span class="badge">HTML</span>
+          <span class="badge">CSS</span>
+          <span class="badge">JavaScript</span>
+          <span class="badge">SQL</span>
+          <span class="badge">Git</span>
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="section skills-section alt">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-circle">
+          <div class="circle" data-percent="90"><span>Java</span></div>
+        </div>
+        <div class="skill-circle">
+          <div class="circle" data-percent="85"><span>Spring Boot</span></div>
+        </div>
+        <div class="skill-circle">
+          <div class="circle" data-percent="95"><span>HTML/CSS</span></div>
+        </div>
+        <div class="skill-circle">
+          <div class="circle" data-percent="85"><span>JavaScript</span></div>
+        </div>
+        <div class="skill-circle">
+          <div class="circle" data-percent="80"><span>MySQL</span></div>
+        </div>
+        <div class="skill-circle">
+          <div class="circle" data-percent="85"><span>Git & GitHub</span></div>
+        </div>
+        <div class="skill-circle">
+          <div class="circle" data-percent="85"><span>OOP & MVC</span></div>
+        </div>
+        <div class="skill-circle">
+          <div class="circle" data-percent="80"><span>REST API</span></div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="section projects-section">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Hospital Management System</h3>
+          <p>Manage patient records, doctor schedules, and appointments.</p>
+          <ul>
+            <li>Java & Spring Boot</li>
+            <li>MySQL Database</li>
+            <li>CRUD operations</li>
+          </ul>
+        </div>
+        <div class="project-card">
+          <h3>E-Commerce Website</h3>
+          <p>Responsive shopping website with dynamic UI.</p>
+          <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Responsive design</li>
+            <li>Interactive product cards</li>
+          </ul>
+        </div>
+        <div class="project-card">
+          <h3>Portfolio Website</h3>
+          <p>
+            Personal portfolio with modern animations and responsive design.
+          </p>
+          <ul>
+            <li>HTML, CSS, JS</li>
+            <li>Glassmorphism UI</li>
+            <li>Interactive Hero Section</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="section contact-section">
+      <h2>Contact Me</h2>
+      <div class="contact-card">
+        <form id="contactForm" class="contact-form">
+          <div class="input-group">
+            <input type="text" required />
+            <label>Your Name</label>
+          </div>
+          <div class="input-group">
+            <input type="email" required />
+            <label>Your Email</label>
+          </div>
+          <div class="input-group">
+            <textarea required></textarea>
+            <label>Your Message</label>
+          </div>
+          <button class="btn" type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <h3>Sonu Kumar</h3>
+          <p>Full Stack Java Developer</p>
+        </div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-social">
+          <a href="https://github.com/Askaht" title="GitHub">🐙</a>
+          <a href="www.linkedin.com/in/sonu-kumar-33b02b302" title="LinkedIn"
+            >💼</a
+          >
+          <a href="" title="Email">✉️</a>
+        </div>
+        <div class="footer-newsletter">
+          <p>Subscribe for updates:</p>
+          <form id="newsletterForm">
+            <input type="email" placeholder="Your email" required="required" />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+        <div class="footer-skills">
+          <span>Java</span>
+          <span>Spring Boot</span>
+          <span>HTML/CSS</span>
+          <span>JavaScript</span>
+          <span>SQL</span>
+          <span>Git</span>
+        </div>
+      </div>
+      <p class="footer-copy">© 2026 Sonu Kumar | All Rights Reserved</p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
